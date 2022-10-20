@@ -1,0 +1,389 @@
+3.17
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    float a,b,c,d,e;
+    float f=0;
+    for(int i=1;i<10;i--)
+    {
+    cout<<"Enter account number (-1 to end): ";
+    cin>>a;
+    if(a==-1)
+        break;
+    cout<<"Enter beginning balance: ";
+    cin>>b;
+    cout<<"Enter total charges: ";
+    cin>>c;
+    cout<<"Enter total credits: ";
+    cin>>d;
+    cout<<"Enter credit limit: ";
+    cin>>e;
+    f=b+d;
+    if(f>e)
+    {
+        cout<<"Acount:       "<<a<<endl;
+        cout<<"Credit limit: "<<e<<endl;
+        cout<<"Balance:      "<<b+d<<endl;
+        cout<<"Credit Limit Exceeded ";
+        cout<<'\n';
+    }
+    cout<<'\n';
+    }
+    return 0;
+}
+
+
+
+
+
+3.18
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a;
+    for(int i=1;i<10;i--)
+    {
+    cout<<"Enter sale in dollars(-1):";
+    cin>>a;
+     if(a==-1)
+        break;
+    cout<<"Salary is "<<a*9/100+200<<endl;
+    
+  
+    }
+    return 0;
+}
+
+
+
+
+
+3.19
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a,b,c;
+    for(int i=1;i<10;i--)
+    {
+    cout<<"Enter loan principal (-1 to end):";
+    cin>>a;
+    if(a==-1)
+        break;
+    cout<<"Enter interest rate:";
+    cin>>b;
+    cout<<"Enter term of the loan in day:";
+    cin>>c;
+    cout<<"The interest charge is:"<<a*b*c/365<<endl;
+    cout<<'\n';
+  
+    }
+    return 0;
+}
+
+
+
+
+
+
+3.20
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a,b,c;
+    for(int i=1;i<10;i--)
+    {
+    cout<<"Enter # hours worked(-1 to end):";
+    cin>>a;
+    if(a==-1)
+        break;      
+    cout<<"Enter hourly rate of the worker($00.00):";
+    cin>>b;
+    if(a<=40)
+        cout<<"Salar is "<<a*b<<endl;
+    else
+        cout<<"Salary is "<<40*b+(a-40)*1.5*b<<endl;
+   cout<<'\n';
+  
+    }
+    return 0;
+}
+
+
+
+
+
+
+3.33
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,b;
+   cout<<"請輸入長度:";
+   cin>>a;
+   cout<<"請輸入寬度:";
+   cin>>b;
+   for(int i=1;i<=a;i++)
+   {
+       for(int j=1;j<=b;j++)
+       {
+            if( j==1 || i==1 || i==a || j==b )
+                cout<<'+';
+            else
+                cout<<' ';
+        }
+        cout<<'\n';
+   }
+   return 0;
+}
+
+
+
+
+
+
+4.15
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int b;
+	float a = 10.0, c = 0.0;
+	cout<<"輸入投資金額:";
+	cin>>b;
+	for (int i=1;i<=15;i++)
+	{
+	    cout<<"第"<<i<<"年的年利率為百分之"<<a;
+	    c=b*(a/100)+b;
+	    cout<<"第"<<i<<"年的獲利為"<<c;
+	    a=a+0.5;
+	    cout<<'\n';
+	}
+    
+    system("pause");
+	return 0;
+}
+
+
+
+
+
+4.16
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"(A)"<<endl;
+    for(int i=1;i<=10;i++)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"+";
+        }
+        cout<<'\n';
+    }
+    cout<<'\n';
+    
+    cout<<"(B)"<<endl;
+    for(int a=1;a<=10;a++)
+    {
+        for(int b=10;b>=a;b--)
+        {
+            cout<<"+";
+        }
+        cout<<'\n';
+    }
+    cout<<'\n';
+    
+    cout<<"(c)"<<endl;
+    for(int m=1;m<11;m++)
+    {
+        for(int z=10-m+2;z<=10;z++)
+        {
+            cout<<" ";
+        }
+        
+        for(int n=1;n<=(11-m);n++)
+        {
+            cout<<"+";
+        }
+        cout<<'\n';
+    }
+    cout<<'\n';
+    
+    cout<<"(D)"<<endl;
+    for(int d=1;d<=10;d++)
+    {
+        for(int o=9;o>=d;o--)
+        {
+            cout<<" ";
+        }
+        for(int g=1;g<=d;g++)
+        {
+            cout<<"+";
+        }
+        cout<<'\n';
+    }
+     return 0;
+}
+
+
+
+
+
+
+4.27
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+	for (int a=1; a<=500;a++)
+	{
+		for (int b=1;b<=a;b++)
+		{
+			for (int c=1;c<=500;c++)
+			{
+				if (c*c == a * a + b * b)
+					cout<<a<<"的平方+"<<b<<"的平方"<<"="<<c<<"的平方"<<endl;
+			}
+		}
+	}
+
+	system("pause");
+	return 0;
+}
+
+
+
+
+
+
+4.28
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    while(1>0)
+    {
+        int salary;
+        float a,b,c,d,e,f;
+        cout<<"經理工資代碼為[1] 小時工資代碼為[2] 委員會代碼為[3] 計件工人代碼為[4] 若不再查詢代碼為[-1]結束"<<endl;
+        cin>>salary;
+    
+        switch(salary)
+        {
+            case 1:
+                cout<<"輸入要給經理的固定薪資:";
+                cin>>a;
+                cout<<"固定薪資為:"<<a<<endl;
+                break;
+            case 2:
+                cout<<"請輸入小時工的時薪:";
+                cin>>b;
+                cout<<"請輸入他的工作時間:";
+                cin>>c;
+                if(c<=40)
+                    cout<<"薪水為"<<b*c<<endl;
+                else
+                    cout<<"薪水為"<<40*b+(c-40)*1.5*b<<endl;
+                break;
+            case 3:
+                cout<<"請輸入委員會每週的銷售總額:";
+                cin>>d;
+                cout<<"薪水為"<<250+d*0.057<<endl;
+                break;
+            case 4:
+                cout<<"輸入計件工人生產幾件商品:";
+                cin>>e;
+                cout<<"請輸入計件工人每件商品所獲得的錢:";
+                cin>>f;
+                cout<<"薪水為"<<e*f<<endl;
+                break;
+            default:
+                cout<<"請輸入正確數值";
+                break;
+        }
+        cout<<'\n';
+        if(salary==-1)
+            break;
+    }
+    
+    
+    return 0;
+}
+
+
+
+
+
+
+4.31
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   for(int a=1;a<=5;a++)
+   {
+       for(int b=1;b<=5-a;b++)
+       {
+           cout<<" ";
+       }
+       for(int c=1;c<=2*a-1;c++)
+       {
+           cout<<"+";
+       }
+       cout<<'\n';
+   }
+   
+   for(int i=4;i>=1;i--)
+   {
+      for(int j=4;j>=i;j--)
+      {
+          cout<<" ";
+      }
+      for(int k=1;k<=i*2-1;k++)
+      {
+          cout<<"+";
+      }
+      cout<<'\n';
+   }
+
+    return 0;
+}
+
